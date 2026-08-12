@@ -1,12 +1,9 @@
-# 03 - LED Blink
+# ESP32 LED Blink
 
 ## Overview
 
-A basic ESP32-S3 project controlling an external LED using GPIO 2.
-
-## Circuit
-
-![LED blink circuit](images/blink-circuit.jpg)
+A simple ESP32-S3 project that controls an external LED using GPIO 2.
+The LED turns on for one second and off for one second repeatedly.
 
 ## Hardware
 
@@ -16,15 +13,27 @@ A basic ESP32-S3 project controlling an external LED using GPIO 2.
 - Breadboard
 - Jumper wires
 
-## How it works
+## Circuit
 
-GPIO 2 is configured as an output. The program sets GPIO 2 HIGH
-for one second and LOW for one second, causing the LED to blink.
+### Physical Circuit
 
-## Concepts
+![LED blink circuit](images/blink-circuit.jpg)
 
-- GPIO
-- Digital output
-- ESP-IDF
-- FreeRTOS task delays
-- Basic LED circuit
+### Schematic
+
+![LED blink schematic](images/blink-schematic.png)
+
+## How It Works
+
+GPIO 2 is configured as a digital output. The program sets GPIO 2
+HIGH to turn the LED on, waits one second, then sets it LOW and waits
+another second.
+
+## Building and Flashing
+
+From the project directory:
+
+```bash
+idf.py set-target esp32s3
+idf.py build
+idf.py flash
