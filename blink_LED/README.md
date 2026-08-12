@@ -6,7 +6,7 @@ A basic ESP32-S3 project controlling an external LED using GPIO 2.
 
 ## Circuit
 
-![LED blink circuit](blink-circuit.jpg)
+![LED blink circuit](images/blink-circuit.jpg)
 
 ## Hardware
 
