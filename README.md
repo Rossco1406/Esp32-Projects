@@ -21,4 +21,5 @@ See the ESP-IDF documentation for installation and setup instructions.
 - 11 - LED_pixel
 - 12 - pixelCont
 - 13 - doorbell
-- 14 - serial_Coms
+- 14 - serial_print
+- 15 - serial_read_write
