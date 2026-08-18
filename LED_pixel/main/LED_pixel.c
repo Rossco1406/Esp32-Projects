@@ -8,7 +8,7 @@
 #define LED_STRIP_GPIO   GPIO_NUM_48
 #define LED_STRIP_COUNT  8  
 #define CHANNEL         0
-#define BRIGHTNESS      10
+#define BRIGHTNESS      100
 
 led_strip_handle_t setStrip(void);
 
@@ -60,7 +60,7 @@ void app_main(void)
                     led_strip_refresh(strip)
                 );
 
-                vTaskDelay(pdMS_TO_TICKS(100));
+                vTaskDelay(pdMS_TO_TICKS(1000));
             }
 
             vTaskDelay(pdMS_TO_TICKS(500));
